@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="世界中から取り寄せた素晴らしい食材の旨みや力強さを極限まで際立たせ、お客様にお届けいたします。">
+  <title>RESTAURANT PREZIOSA-reservation</title>
+  <link rel="icon" type="image/png" href="images/logo/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher&family=Shippori+Mincho:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Philosopher&family=Shippori+Mincho:wght@700&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- 予約ページ トップ -->
+  <div id="reservation" class="big-bg">
+    <header class="page-header">
+      <div class="page-frame wrapper">
+        <h1><a href="index.html"><img class="logo" src="images/logo/title2.png" alt="RESTAURANT PREZIOSA"></a></h1>
+        <div class="header-nav">
+          <!-- PC メニュー -->
+          <nav class="pc-nav">
+            <ul class="nav-menu-ul">
+              <li class="nav-menu-li"><a href="menu.html">MENU</a></li>
+              <li class="nav-menu-li"><a href="store.html">STORE</a></li>
+              <li class="nav-menu-li"><a href="#">ONLINE SHOP</a></li>
+              <li class="nav-menu-li"><a href="#">NEWS</a></li>
+              <li class="nav-menu-li nav-menu-reservation"><a href="reservation.html">RESERVATION</a></li>
+            </ul>
+          </nav>
+          <!-- SP メニュー -->
+          <nav class="sp-nav">
+            <ul class="nav-menu-ul">
+              <li class="nav-menu-li"><a href="menu.html">MENU</a></li>
+              <li class="nav-menu-li"><a href="store.html">STORE</a></li>
+              <li class="nav-menu-li"><a href="#">ONLINE SHOP</a></li>
+              <li class="nav-menu-li"><a href="#">NEWS</a></li>
+              <li class="nav-menu-li nav-menu-reservation"><a href="reservation.html">RESERVATION</a></li>
+              <li class="close"><span>閉じる</span></li>
+            </ul>
+          </nav>
+          <div id="hamburger">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <h2 class="reservation-title page-title">RESERVATION</h2>
+    </div>
+  </div>
+
+  <!-- 予約 コンセプト -->
+  <section class="concept wrapper">
+    <h3>ご予約はこちら</h3>
+    <img class="concept-img" src="images/reservation-page/reservation-illustration.png" alt="予約">
+  </section>
+
+  <!-- お知らせ -->
+  <div class="notice form-wrapper">
+    <p class="notice-title">お店からのお知らせ</p>
+    <div class="notice-text">
+      <p class="notice-text1">・定休日 : 毎週水曜日</p>
+      <p class="notice-text2">・営業時間 : 9:00～23:00</p>
+      <p class="notice-text3">・ご予約は2ヶ月先まで承ります。</p>
+      <p class="notice-text4">・2ヶ月以上先のご予約、7名様以上でのご利用、お店への特別なリクエストがある場合などは[ご要望・ご意見]の欄に入力していただくか、お電話にてお問合せください。<br>
+        【RESTAURANT PREZIOSA TEL. 01-2345-6789】</p>
+    </div>
+  </div>
+
+  <!-- 入力欄 -->
+  <form class="form-wrapper" action="#">
+    <div class="form-text form-date">
+      <div class="form-title">
+        <label for="date">来店日</label>
+        <img src="images/reservation-page/indispensable.png" alt="必須">
+      </div>
+      <input type="date" id="date" name="date" required>
+    </div>
+    <!-- 時間 -->
+    <div class="form-text">
+      <div class="form-title">
+        <label for="time">時間</label>
+        <img src="images/reservation-page/indispensable.png" alt="必須">
+      </div>
+      <select name="time" id="time">
+        <option value="選択して下さい。" selected>選択してください。</option>
+        <option value="9:00~">9:00~</option>
+        <option value="11:00~">11:00~</option>
+        <option value="13:00~">13:00~</option>
+        <option value="15:00~">15:00~</option>
+        <option value="17:00~">17:00~</option>
+        <option value="19:00~">19:00~</option>
+        <option value="21:00~">21:00~</option>
+      </select>
+    </div>
+    <!-- 人数 -->
+    <div class="form-text">
+      <div class="form-title">
+        <label for="number">人数</label>
+        <img src="images/reservation-page/indispensable.png" alt="必須">
+      </div>
+      <select name="number" id="number">
+        <option value="選択して下さい。" selected>選択してください。</option>
+        <option value="1人">1人</option>
+        <option value="2人">2人</option>
+        <option value="3人">3人</option>
+        <option value="4人">4人</option>
+        <option value="5人">5人</option>
+        <option value="6人">6人</option>
+        <option value="7人以上">7人以上は[ご要望・ご意見]の欄に入力していただくか、お電話にてお問合せください。</option>
+      </select>
+    </div>
+    <!-- 予約者名 -->
+    <div class="form-text">
+      <div class="form-title">
+        <label for="name">予約者名</label>
+        <img src="images/reservation-page/indispensable.png" alt="必須">
+      </div>
+      <input type="text" id="name" name="name" placeholder="例）山田 太郎" required>
+    </div>
+    <!-- ふりがな -->
+    <div class="form-text">
+      <div class="form-title">
+        <label for="furigana">ふりがな</label>
+        <img src="images/reservation-page/indispensable.png" alt="必須">
+      </div>
+      <input type="text" id="furigana" name="furigana" placeholder="例）やまだ たろう" required>
+    </div>
+    <!-- 電話番号 -->
+    <div class="form-text">
+      <div class="form-title">
+        <label for="tel">電話番号</label>
+        <img src="images/reservation-page/indispensable.png" alt="必須">
+      </div>
+      <input type="tel" id="tel" name="tel" placeholder="例）000-0000-0000"  required>
+    </div>
+    <!-- メールアドレス -->
+    <div class="form-text">
+      <div class="form-title">
+        <label for="email">メールアドレス</label>
+        <img src="images/reservation-page/indispensable.png" alt="必須">
+      </div>
+      <input type="email" id="email" name="email" placeholder="例）taroyamada@aaaaaaaa.co.jp" required>
+    </div>
+    <!-- ご要望・ご意見 -->
+    <div class="form-text">
+      <div class="form-title">
+        <label for="message">ご要望・ご意見</label>
+        <img src="images/reservation-page/any.png" alt="任意">
+      </div>
+      <textarea id="message" name="message" placeholder="食品アレルギー、苦手な食材などがありましたらこちらにご記入ください。"></textarea>
+    </div>
+    <input type="submit" class="button" value="予約を申し込む">
+  </form>
+
+  <!-- footer -->
+  <footer>
+    <div class=" wrapper">
+      <div class="footer-content">
+        <h4><a href="index.html"><img class="footer-logo" src="images/logo/title2.png" alt="RESTAURANT PREZIOSA"></a></h4>
+        <div class="footer-list">
+          <ul class="footer-list1">
+            <li>RESTAURANT PREZIOSA</li>
+            <li>〒123-4567</li>
+            <li>東京都渋谷区渋谷123</li>
+            <li>TEL. 01-2345-6789</li>
+            <li>定休日:毎週水曜日</li>
+          </ul>
+          <ul class="footer-list2">
+            <li><a href="#">メニュー</a></li>
+            <li><a href="#">店舗情報</a></li>
+            <li><a href="#">オンラインストア</a></li>
+            <li><a href="#">ニュース</a></li>
+            <li><a href="#">ご予約</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+      <p><small>&copy;2024 KAMADA</small></p>
+    </div>
+  </footer>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+  <!-- JavaScript -->
+  <script src="restaurant.js"></script>
+</body>
+
+</html>

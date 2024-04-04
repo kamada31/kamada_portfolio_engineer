@@ -1,0 +1,1063 @@
+@charset "UTF-8";
+
+/* 共有部分 */
+html{
+  font-size: 100%;
+}
+body{
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  line-height: 1.7;
+  color: #292929;
+}
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+}
+li{
+  list-style: none;
+}
+.wrapper{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+/* header */
+.logo{
+  width: 175px;
+  margin-top: 10px;
+}
+.nav-menu-ul{
+  display: flex;
+  margin-top: 19px;
+}
+.nav-menu-li{
+  margin-left: 33px;
+}
+.nav-menu-li a{
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.nav-menu-li a:hover{
+  color: #8E8E8E;
+  transition: .5s;
+}
+.nav-menu-reservation a{
+  color: #DF6100;
+}
+.page-header{
+  padding: 0 4%;
+  background-color: #2929299d;
+}
+.page-frame{
+  display: flex;
+  justify-content: space-between;
+}
+.sp-nav{
+  display: none;
+}
+
+/* home */
+.home-content{
+  text-align: center;
+  margin-top: 9%;
+}
+.home-content img{
+  width: 500px;
+}
+
+/* scroll */
+.scrolldown1{
+  position:absolute;
+  left:50%;
+  bottom:10px;
+  height:50px;
+}
+.scrolldown1 span{
+  position: absolute;
+  left:-21px;
+  top: -25px;
+  color: #DF6100;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+}
+.scrolldown1::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 30px;
+  background: #DF6100;
+  animation: pathmove 1.4s ease-in-out infinite;
+  opacity:0;
+}
+@keyframes pathmove{
+  0%{
+    height:0;
+    top:0;
+    opacity: 0;
+  }
+  30%{
+    height:30px;
+    opacity: 1;
+  }
+  100%{
+    height:0;
+    top:50px;
+    opacity: 0;
+  }
+}
+
+/* メインの背景画像 */
+.big-bg{
+  background-size: cover;
+  background-position: center top;
+}
+#home{
+  background-image: url(images/main/main-1.jpg);
+  min-height: 100vh;
+  position: relative;
+}
+
+/* コンセプト */
+.concept{
+  margin-top: 100px;
+}
+h3{
+  text-align: center;
+  font-family: 'Shippori Mincho', serif;
+  font-size: 1.7rem;
+}
+.concept p{
+  text-align: center;
+  font-size: 1rem;
+}
+.home-concept1{
+  margin-top: 30px;
+}
+
+/* メニュー */
+.menu{
+  margin-top: 150px;
+}
+.menu-content{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.menu-img1{
+  width: 450px;
+  height: 250px;
+}
+.menu-summary{
+  padding-right: 8%;
+  position: relative;
+}
+h4{
+  text-align: center;
+  line-height: 0.8;
+}
+.maintitle{
+  font-family: 'Shippori Mincho', serif;
+  font-size: 1.4rem;
+}
+.subtitle{
+  font-size: 0.7rem;
+}
+.menu-text{
+  margin-top: 54px;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+.menu-text2{
+  margin-top: 15px;
+}
+
+.details{
+  display: block;
+  font-family: 'Noto Sans', sans-serif;
+  color: #DF6100;
+  font-size: 1rem;
+  position: relative;
+}
+.menu-details{
+  padding-left: 50px;
+  margin-top: 30px;
+  width: 130px;
+}
+.menu-details::before{
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #DF6100;
+  border-right: 2px solid #DF6100;
+  transform: rotate(45deg);
+}
+.menu-details::after{
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: #DF6100;
+}
+.menu-details:hover::before{
+  left: 36px;
+  transition: .3s ease-out;
+}
+.menu-details:hover::after{
+  left: 6px;
+  transition: .3s ease-out;
+}
+.menu-img2{
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+}
+
+/* 店舗情報 */
+.information{
+  margin-top: 150px;
+}
+.information-content{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-top: 30px;
+}
+.information-img1{
+  width: 450px;
+  height: 250px;
+}
+.information-summary{
+  padding-left: 6%;
+  position: relative;
+}
+.maintitle{
+  font-family: 'Shippori Mincho', serif;
+  font-size: 1.4rem;
+}
+.subtitle{
+  font-size: 0.7rem;
+}
+.information-text{
+  margin-top: 40px;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+.information-text2{
+  margin-top: 15px;
+}
+.details{
+  display: block;
+  font-family: 'Noto Sans', sans-serif;
+  color: #DF6100;
+  font-size: 1rem;
+  position: relative;
+}
+.information-details{
+  padding-right: 50px;
+  margin: 30px 0 0 44%;
+  width: 195px;
+}
+.information-details::before{
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 30px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #DF6100;
+  border-right: 2px solid #DF6100;
+  transform: rotate(-135deg);
+}
+.information-details::after{
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 2px;
+  background: #DF6100;
+}
+.information-details:hover::before{
+  right: 36px;
+  transition: .3s ease-out;
+}
+.information-details:hover::after{
+  right: 6px;
+  transition: .3s ease-out;
+}
+.information-img2{
+  position: absolute;
+  left: 0;
+  bottom: -60px;
+}
+
+/* オンラインストア */
+.store{
+  margin-top: 150px;
+}
+.store a{
+  width: 750px;
+  height: 200px;
+  display: block;
+  margin: 30px auto 0;
+  position: relative;
+  overflow: hidden;
+  background: #292929;
+}
+.store a:hover img{
+  opacity: 0.5;
+  transition: .5s;
+}
+.banner-pc{
+  display: block !important;
+}
+.banner-sp{
+  display: none !important;
+}
+
+/* ニュース */
+.news{
+  margin-top: 150px;
+}
+.news-grid{
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+  margin-top: 30px;
+}
+.date{
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: #DF6100;
+  color: #fff;
+}
+.hover {
+  position: relative;
+}
+.hover .hover-img {
+  margin: 0;
+  padding: 0;
+}
+.hover-img img {
+  width: 100%;
+  height: 100%;
+}
+.hover .hover-text {
+  position: absolute;
+  width: 100%;
+  height: 97%;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background-color:    rgba(0,0,0,0.65);
+  /*透明にして表示させない*/
+  opacity: 0;
+  /*ホバーの動き方*/
+  transition: .3s;
+}
+.hover-text1 {
+  font-size: 1rem;
+  padding: 85px 32px 0;
+}
+.hover-text2 {
+  font-size: 1rem;
+  padding: 85px 43px 0;
+}
+.hover-text3 {
+  font-size: 1rem;
+  padding: 104px 49px 0;
+}
+.hover-text4 {
+  font-size: 1rem;
+  padding: 85px 35px 0;
+}
+
+/*ホバーエフェクト*/
+.hover:hover .hover-text {
+  /*不透明にして表示*/
+  opacity: 1;
+}
+
+.news-detals{
+  padding-left: 50px;
+  width: 127px;
+  margin: auto;
+}
+.news-detals::before{
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #DF6100;
+  border-right: 2px solid #DF6100;
+  transform: rotate(45deg);
+}
+.news-detals::after{
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: #DF6100;
+}
+.news-detals:hover::before{
+  left: 36px;
+  transition: .3s;
+}
+.news-detals:hover::after{
+  left: 6px;
+  transition: .3s;
+}
+
+/* アクセス */
+.location{
+  margin-top: 150px;
+}
+.location-summary{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.location-info{
+  padding-right: 18%;
+  position: relative;
+}
+.location-info1{
+  font-size: 1.1rem;
+  border-bottom: 2px solid #DF6100;
+}
+.location-info2{
+  font-size: 1rem;
+  margin-top: 20px;
+}
+.location-img{
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+}
+.map-pc{
+  display: block !important;
+}
+.map-sp{
+  display: none !important;
+}
+
+/* ご予約 */
+.reservation{
+  margin: 100px auto 0;
+  text-align: center
+}
+
+/* footer */
+footer{
+  background: #292929;
+  color: #fff;
+  font-size: 0.8rem;
+  margin-top: 100px;
+}
+.footer-content{
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-list{
+  display: flex;
+}
+.footer-logo{
+  width: 175px;
+}
+.footer-list1{
+  margin-right: 30px;
+}
+.footer-list2 a{
+  color: #fff;
+}
+footer p{
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* MENU---------------------------------------- */
+#menu{
+  background-image: url(images/menu-page/menu-page-top1.jpg);
+  height: 300px;
+}
+h2{
+  color: #fff;
+  font-size: 5rem;
+  font-family: 'Shippori Mincho', serif;
+  text-align: center;
+}
+
+/* メニュー　コンセプト */
+h3 br{
+  display: none;
+}
+.concept-img{
+  display: block;
+  margin: 100px auto 0;
+}
+
+/* 各セクション */
+.menu-section{
+  margin-top: 100px;
+}
+.menu-img{
+  margin-top: 30px;
+}
+.menu-list{
+  margin-top: 30px;
+  padding-bottom: 40px;
+  text-align: center;
+  position: relative;
+}
+.menu-asset1{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding-left: 3%;
+}
+.menu-asset2{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding-right: 3%;
+}
+.menu-li{
+  margin-top: 20px;
+  font-size: 1rem;
+}
+.sp-br{
+  display: none;
+}
+
+/* 補足 */
+.supplement{
+  margin-top: 100px;
+  position: relative;
+}
+.supplement-text{
+  font-size: 1rem;
+  text-align: center;
+}
+.supplement-img{
+  position: absolute;
+  right: 16%;
+  top: -30px;
+}
+
+/* STORE---------------------------------------- */
+#store{
+  background-image: url(images/store-page/store-page-top1.jpg);
+  height: 300px;
+}
+
+/* 店舗情報 */
+.store-page{
+  margin-top: 100px;
+}
+.store-page-text{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1rem;
+}
+.store-page-text2,
+.store-page-text3{
+  margin-top: 20px;
+}
+.store-page-contents{
+  margin-top: 30px;
+}
+.contents1-pc{
+  width: auto;
+  display: block !important;
+}
+.contents1-sp{
+  display: none !important;
+}
+.contents-grid{
+  margin-top: 20px;
+  display: grid;
+  gap: 23px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* シェフ */
+.chef{
+  margin-top: 100px;
+}
+.chef-name{
+  margin-top: 30px;
+  text-align: center;
+  line-height: 1.3;
+}
+.chef-name1{
+  font-family: 'Shippori Mincho', serif;
+  font-size: 2.5rem;
+}
+.chef-name2{
+  font-family: 'Shippori Mincho', serif;
+  font-size: 1.25rem;
+}
+.chef-text1{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1rem;
+}
+.chef-img{
+  display: block;
+  margin: 30px auto 0;
+}
+.chef-information{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1rem;
+  position: relative;
+}
+.chef-information-img{
+  position: absolute;
+  right: 10%;
+  top: 0;
+}
+
+/* RESERVATION---------------------------------------- */
+#reservation{
+  background-image: url(images/reservation-page/reservation-top.jpg);
+  height: 300px;
+}
+
+/* お知らせ */
+.form-wrapper{
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+.notice{
+  margin-top: 100px;
+  padding: 20px 4%;
+  border-top: 1px #FF9F55 solid;
+  border-bottom: 1px #FF9F55 solid;
+}
+.notice-title{
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+.notice-text p{
+  margin-top: 5px;
+}
+.notice-text4{
+  line-height: 1.5;
+}
+
+/* フォーム */
+.form-text{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.form-date{
+  margin-top: 100px;
+}
+label{
+  font-family: 'Shippori Mincho', serif;
+  font-size: 1.125rem;
+}
+.form-title{
+  width: 200px;
+}
+.form-title img{
+  float: right;
+  margin-top: 6px;
+}
+input[type='date'],
+select,
+input[type='number'],
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+textarea{
+  background: #FFF6BE;
+  border: 1px #C2C2C2 solid;
+  font-size: 1rem;
+  border-radius: 5px;
+  width: 250px;
+}
+textarea{
+  height: 7rem;
+}
+input[type="submit"]{
+  font-family: 'Shippori Mincho', serif;
+  font-size: 1.7rem;
+  display: block;
+  margin: 50px auto 0;
+  padding: 0 35px;
+  text-align: center;
+  background-image: url(images/reservation-page/reservation-btn.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+input[type="submit"]:hover{
+  color: #DF6100;
+  transition: .3s;
+}
+
+/* モバイル版 */
+@media(max-width: 600px){
+  /* header */
+  .pc-nav{
+    display: none;
+  }
+  header{
+    height: 58px;
+  }
+  .nav-menu-ul{
+    margin-top: 0;
+  }
+  .home-content{
+    margin-top: 23%;
+  }
+  .home-content img{
+    width: 300px;
+  }
+  .sp-nav{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    width: 100%;
+    background: #000000e7;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all .3s ease-in-out;
+  }
+  #hamburger{
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 25px;
+    margin-top: 16px;
+  }
+  #hamburger span{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    transform: translateY(-50%);
+  }
+  #hamburger::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+  }
+  #hamburger::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+  }
+
+  /* モバイル版 メニュー */
+  .sp-nav ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .sp-nav li{
+    margin: 20px 0 0;
+    padding: 0;
+  }
+  .sp-nav li span{
+    font-size: 1rem;
+    color: #fff;
+  }
+  .sp-nav a .sp-nav li span{
+    display: block;
+    padding: 20px 0;
+  }
+  .sp-nav .close {
+  position: relative;
+  padding-left: 20px;
+  }
+  .sp-nav .close::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 1px;
+    background: #fff;
+    transform: rotate( 45deg );
+  }
+  .sp-nav .close::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 1px;
+    background: #fff;
+    transform: rotate( -45deg );
+  }
+  .toggle{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  /* コンセプト */
+  .concept p{
+    text-align: left;
+    font-size: 0.9rem;
+  }
+  .home-concept2{
+    margin-top: 20px;
+  }
+
+  /* メニュー */
+  .menu-content{
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-img1{
+    width: 345px;
+    height: 191px;
+  }
+  .menu-summary{
+    padding-right: 0;
+  }
+  .menu-text{
+    font-size: 0.9rem;
+  }
+  .menu-text1 br,
+  .menu-text2 br{
+    display: none;
+  }
+  .menu-img2{
+    width: 100px;
+  }
+
+  /* 店舗情報 */
+  .information-content{
+    flex-direction: column;
+    align-items: center;
+  }
+  .information-img1{
+    width: 345px;
+    height: 191px;
+  }
+  .information-summary{
+    padding-left: 0;
+  }
+  .information-text{
+    font-size: 0.9rem;
+  }
+  .information-text1 br,
+  .information-text2 br{
+    display: none;
+  }
+  .information-details{
+    margin: 30px 0 0 43%;
+  }
+
+  /* オンラインストア */
+  .banner-pc{
+    display: none !important;
+  }
+  .banner-sp{
+    display: block !important;
+  }
+  .store a{
+    width: 296px;
+    height: 250px;
+  }
+
+  /* ニュース */
+  .news-grid{
+    padding: 0 15%;
+  }
+
+  /* アクセス */
+  .location-summary{
+    flex-direction: column;
+    align-items: center;
+  }
+  .map-pc{
+    display: none !important;
+  }
+  .map-sp{
+    display: block !important;
+  }
+  .location-info{
+    padding: 30px 18% 0 0;
+  }
+  .location-info2{
+    font-size: 0.9rem;
+  }
+  .location-img{
+    width: 60px;
+    right: 0;
+  }
+
+  /* フッター */
+  .footer-content{
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-list{
+    padding-top: 30px;
+  }
+
+  /* MENU---------------------------------------- */
+  /* bg */
+  #menu{
+    height: 200px;
+  }
+
+  /* メニュー　コンセプト */
+  .concept {
+    margin-top: 50px;
+  }
+  h3 br{
+    display: block;
+  }
+  .concept-img {
+    margin: 50px auto 0;
+  }
+
+  /* 各セクション */
+  .sp-br{
+    display: block;
+  }
+  .menu-li{
+    font-size: 0.9rem;
+  }
+
+  /* 補足 */
+  .supplement{
+    margin-top: 50px;
+  }
+  .supplement-text{
+    text-align: left;
+    font-size: 0.9rem;
+  }
+  .supplement-img{
+    right: 0;
+    top: 20px;
+  }
+
+  /* STORE---------------------------------------- */
+  /* bg */
+  #store{
+    height: 200px;
+  }
+
+  /* ストア コンセプト */
+  .concept1{
+    margin-left: 20px;
+  }
+
+  /* 店舗情報 */
+  .store-page-text{
+    text-align: left;
+    font-size: 0.9rem;
+  }
+  .store-page-text br{
+    display: none;
+  }
+  .contents1-pc{
+    display: none !important;
+  }
+  .contents1-sp{
+    margin: auto;
+    display: block !important;
+  }
+  .contents-grid img{
+    margin: auto;
+  }
+
+  /* シェフ */
+  .chef-text1{
+    font-size: 0.9rem;
+  }
+  .chef-information{
+    text-align: left;
+    font-size: 0.9rem;
+  }
+  .chef-text3,
+  .chef-text4{
+    margin-top: 20px;
+  }
+  .chef-information-img{
+    right: 0;
+    top: 135px;
+  }
+
+  /* RESERVATION---------------------------------------- */
+  /* bg */
+  #reservation{
+    height: 200px;
+  }
+
+  /* 予約 トップ */
+  .reservation-title{
+    font-size: 2.5rem;
+    margin-top: 10%;
+  }
+  /* お知らせ */
+  .notice-text{
+    font-size: 0.9rem;
+  }
+  /* フォーム */
+  .form-text{
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
