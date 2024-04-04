@@ -1,0 +1,1403 @@
+@charset "UTF-8";
+
+/* 共有部分 */
+html{
+  font-size: 10px;
+}
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #292929;
+}
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+}
+li{
+  list-style: none;
+}
+.wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+/* header */
+header{
+  width: 100%;
+  height: 90px;
+  margin-top: 10px;
+  box-shadow: 0 4px 4px #c5c5c5;
+}
+.header-frame{
+  display: flex;
+  justify-content: space-between;
+}
+h1 img{
+  width: 200px;
+}
+.header-ul{
+  display: flex;
+}
+.header-li{
+  margin-right: 30px;
+}
+.header-li a{
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #292929;
+  position: relative;
+}
+.header-a1::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #4476FF;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: .4s;
+}
+.header-a2::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #61FF6B;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: .4s;
+}
+.header-a3::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #FF4E4E;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: .4s;
+}
+.header-a4::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #eff318;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: .4s;
+}
+.header-li a:hover::after {
+  transform: scale(1, 1);
+}
+.sp-nav{
+  display: none;
+}
+.header2{
+  margin-top: 22px;
+}
+.header2 p{
+  font-size: 1.6rem;
+}
+.header2-text1{
+  float: right;
+}
+.header2 p span{
+  font-size: 2.5rem;
+}
+
+/* main */
+.main-img-pc{
+  display: inline-block !important;
+  width: auto;
+}
+.main-img-sp{
+  display: none !important;
+}
+.main-img{
+  text-align: center;
+}
+.main-img img:hover{
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.online-banner{
+  display: block;
+  width: 650px;
+  margin: 30px auto;
+}
+.online-banner:hover{
+  opacity: 0.7;
+  transition: 0.4s;
+}
+.main-form{
+  width: auto;
+  background: #007CE8;
+}
+.main-form p{
+  padding-top: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.main-form-list{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 30px;
+}
+.main-form-list li{
+  text-align: center;
+}
+.main-form-list li a{
+  display: block;
+  color: #fff;
+  width: 350px;
+  height: 100px;
+  padding: 20px;
+}
+.main-form-text1{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.main-form-text2{
+  font-size: 1.5rem;
+}
+.main-form-btn1{
+  background: linear-gradient(#E95079 0%, #b93f60 100%);
+  box-shadow: 0 3px 2px #00000059;
+  border-radius: 5px;
+}
+.main-form-btn1:hover{
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+  box-shadow: 0 1px 2px #00000059;
+  background-image: linear-gradient(#E95079 0%, #E95079 100%);
+  transition: .4s;
+}
+.main-form-btn2{
+  background: linear-gradient(#FF8D1C 0%, #c76d14 100%);
+  box-shadow: 0 3px 2px #00000059;
+  border-radius: 5px;
+}
+.main-form-btn2:hover{
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+  box-shadow: 0 1px 2px #00000059;
+  background-image: linear-gradient(#FF8D1C 0%, #FF8D1C 100%);
+  transition: .4s;
+}
+.main-form-btn3{
+  background: linear-gradient(#8DE12E 0%, #70b324 100%);
+  box-shadow: 0 3px 2px #00000059;
+  border-radius: 5px;
+}
+.main-form-btn3:hover{
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);
+  box-shadow: 0 1px 2px #00000059;
+  background-image: linear-gradient(#8DE12E 0%, #8DE12E 100%);
+  transition: .4s;
+}
+.main-form-text1{
+  position: relative;
+  padding-left: 25px;
+}
+.main-form-btn3 
+.main-form-text1::before{
+  content: url(images/top-images/top-btn.png);
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+.main-form-list li a{
+  position: relative;
+  padding-right: 30px;
+}
+.main-form-list li a::before{
+  content: '';
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 25px;
+  width: 13px;
+  height: 13px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: rotate(45deg);
+}
+.main-form-list li a:hover::before{
+  right: 20px;
+  transition: .5s;
+}
+
+/* コース案内 */
+.main-course{
+  margin-top: 100px;
+}
+h2{
+  background: #007CE8;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+}
+.main-course-contents{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.student{
+  padding: 30px;
+  width: 400px;
+}
+.main-course-contents1{
+  background: #4476FF;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.main-course-contents2{
+  background: #61FF6B;
+}
+.main-course-contents3{
+  background: #FF4E4E;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.student p{
+  font-size: 2.5rem;
+  font-weight: bold;
+  position: relative;
+  padding: 32px 0 0 127px;
+}
+.main-course-contents1 p::before{
+  content: url(images/top-images/top-course-1.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main-course-contents2 p::before{
+  content: url(images/top-images/top-course-2.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main-course-contents3 p::before{
+  content: url(images/top-images/top-course-3.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.plan{
+  width: 300px;
+  height: 150px;
+  background: #fff;
+  border-radius: 10px;
+  margin: 70px auto 0;
+}
+.plan ul{
+  padding: 17px;
+}
+.plan ul li{
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+.student a{
+  display: block;
+  width: 180px;
+  height: 40px;
+  margin: 20px auto 0;
+  background: #63CFFF;
+  border-radius: 20px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+  padding: 7px 42px;
+}
+.student a:hover{
+  background: #007CE8;
+  transition: .4s;
+}
+
+/* 塾の特徴 */
+.main-feature{
+  margin-top: 100px;
+}
+.main-feature-pc{
+  display: block !important;
+  width: auto;
+  margin-top: 50px;
+}
+.main-feature-sp{
+  display: none !important;
+}
+.main-feature-contents{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-feature-contents1,
+.main-feature-contents2,
+.main-feature-contents3{
+  width: 400px;
+}
+.main-feature-contents2{
+  border-left: 1px solid #a0a0a0;
+  border-right: 1px solid #a0a0a0;
+}
+.feature-subtitle1,
+.feature-subtitle2,
+.feature-subtitle3{
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 30px 15px 20px 80px;
+  position: relative;
+}
+.feature-subtitle1::before{
+  content: url(images/top-images/feature-contents1.png);
+  position: absolute;
+  top: 16px;
+  left: 10px;
+}
+.feature-subtitle2::before{
+  content: url(images/top-images/feature-contents2.png);
+  position: absolute;
+  top: 16px;
+  left: 10px;
+}
+.feature-subtitle3::before{
+  content: url(images/top-images/feature-contents3.png);
+  position: absolute;
+  top: 16px;
+  left: 10px;
+}
+.main-feature-text{
+  font-size: 1.6rem;
+  width: 250px;
+  margin: 20px auto;
+}
+.main-feature a{
+  display: block;
+  width: 250px;
+  height: 70px;
+  margin: 50px auto 0;
+  text-align: center;
+  border: 3px solid #63CFFF;
+  font-size: 1.8rem;
+  color: #292929;
+  font-weight: bold;
+  padding: 18px;
+  position: relative;
+}
+.main-feature a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #292929;
+  border-right: 2px solid #292929;
+  transform: rotate(45deg);
+}
+.main-feature a:hover{
+  color: #fff;
+  background: #007CE8;
+  transition: .4s;
+}
+.main-feature a:hover::before{
+  right: 16px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transition: .4s;
+}
+
+/* 合格実績・塾生の体験談 */
+.main-experience{
+  margin-top: 100px;
+  width: auto;
+  background-image: url(images/top-images/top-personal-pc.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.main-experience-title{
+  padding-top: 30px;
+  background: none;
+  color: #292929;
+}
+.main-experience-text{
+  font-size: 1.6rem;
+  padding-top: 30px;
+  text-align: center;
+}
+.main-experience-list{
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.main-experience-btn1 a{
+  display: block;
+  width: 280px;
+  height: 70px;
+  margin: 50px auto 0;
+  text-align: center;
+  border: 1px solid #0033FF;
+  background: #71A0FF;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+  padding: 18px;
+  position: relative;
+}
+.main-experience-btn2 a{
+  display: block;
+  width: 280px;
+  height: 70px;
+  margin: 50px auto 0;
+  text-align: center;
+  border: 1px solid #0F9700;
+  background: #48FF86;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+  padding: 18px;
+  position: relative;
+}
+.main-experience-btn3 a{
+  display: block;
+  width: 280px;
+  height: 70px;
+  margin: 50px auto 0;
+  text-align: center;
+  border: 1px solid #FF0043;
+  background: #ff89a8;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+  padding: 18px;
+  position: relative;
+}
+.main-experience-list li a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 25px;
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
+}
+.main-experience-list li a:hover:before{
+  right: 21px;
+  transition: .4s;
+}
+.main-experience-btn1 a:hover{
+  background: #3567ca;
+  transition: .4s;
+}
+.main-experience-btn2 a:hover{
+  background: #0dc94c;
+  transition: .4s;
+}
+.main-experience-btn3 a:hover{
+  background: #c74668;
+  transition: .4s;
+}
+
+/* お知らせ */
+.main-notice{
+  margin: 100px auto;
+}
+.main-notice-list{
+  margin-top: 50px;
+}
+.main-notice-list ul li{
+  font-size: 1.6rem;
+  color: #292929;
+  border-bottom: 1px solid #a0a0a0;
+}
+.main-notice-a{
+  display: block;
+  color: #292929;
+  padding: 0 100px 0 70px;
+  line-height: 2;
+  position: relative;
+}
+.main-notice-a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100px;
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #292929;
+  border-right: 2px solid #292929;
+  transform: rotate(45deg);
+}
+.main-notice-a:hover:before{
+  right: 90px;
+  transition: .4s;
+}
+.main-notice-span1,
+.main-notice-span2,
+.main-notice-span3,
+.main-notice-span4{
+  padding-left: 120px;
+  position: relative;
+}
+.main-notice-span1::before{
+  content: url(images/top-images/notice-1.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main-notice-span2::before{
+  content: url(images/top-images/notice-1.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main-notice-span3::before{
+  content: url(images/top-images/notice-2.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main-notice-span4::before{
+  content: url(images/top-images/notice-3.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main-notice-btn{
+  display: block;
+  width: 250px;
+  height: 70px;
+  margin: 50px auto 0;
+  text-align: center;
+  border: 3px solid #63CFFF;
+  font-size: 1.8rem;
+  color: #292929;
+  font-weight: bold;
+  padding: 18px;
+  position: relative;
+}
+.main-notice-btn::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #292929;
+  border-right: 2px solid #292929;
+  transform: rotate(45deg);
+}
+.main-notice-btn:hover{
+  color: #fff;
+  background: #007CE8;
+  transition: .4s;
+}
+.main-notice-btn:hover::before{
+  right: 16px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transition: .4s;
+}
+
+/* footer */
+footer{
+  margin-top: 50px;
+  background: #E1E1E1;
+}
+.footer-course{
+  width: 500px;
+  margin: 0 auto;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #a0a0a0;
+}
+.footer-course li{
+  padding-bottom: 10px;
+}
+.footer-course li a{
+  font-size: 1.5rem;
+  color: #292929;
+}
+.footer-content{
+  width: 800px;
+  padding-top: 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-list{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-list li{
+  padding-bottom: 10px;
+}
+.footer-list a{
+  font-size: 1.5rem;
+  color: #292929;
+}
+.footer-list2{
+  padding-left: 70px;
+}
+.footer-sns{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.footer-sns li{
+  padding-left: 30px;
+  align-items: center;
+}
+.footer-h1{
+  padding-top: 40px;
+  text-align: center;
+}
+.footer-h1 img{
+  width: 150px;
+}
+footer p{
+  padding-top: 10px;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+/* course.html------------------------------------------------------------------- */
+/* course-main */
+.course-img-pc{
+  display: inline-block !important;
+  width: auto;
+  vertical-align: top;
+}
+.course-img-sp{
+  display: none !important;
+}
+.course-img{
+  text-align: center;
+}
+.course-title{
+  font-size: 4rem;
+}
+.course-main-text{
+  margin-top: 50px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* 学力・個性を見える化 */
+.course{
+  margin-top: 100px;
+}
+.h3{
+  text-align: center;
+}
+h3{
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: bold;
+  border-bottom: 2px solid #63CFFF;
+}
+.test-content{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.test-frame1{
+  background: #007CE8;
+  width: 500px;
+  border-radius: 30px;
+  padding: 30px;
+}
+.test-subtitle-frame{
+  text-align: center;
+}
+h4{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+.test-subtitle{
+  display: inline-block;
+  text-align: left;
+}
+.test-span{
+  font-size: 2rem;
+}
+.test-frame2{
+  background: #fff;
+  border-radius: 30px;
+  margin-top: 30px;
+  padding: 30px;
+  text-align: center;
+}
+.test-text{
+  display: inline-block;
+  font-size: 1.6rem;
+  text-align: left;
+  margin-top: 20px;
+}
+
+/* お子さま一人ひとりに合わせる教材 */
+.course-frame{
+  width: auto;
+  background: #007CE8;
+  border-radius: 30px;
+  margin-top: 50px;
+  padding: 30px;
+}
+.course-frame2{
+  background: #fff;
+  border-radius: 30px;
+  margin-top: 30px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.course-text{
+  font-size: 1.6rem;
+  padding: 39px;
+}
+.course-br{
+  display: none;
+}
+
+/* 高校受験体験談 */
+.course-btn{
+  margin: 100px auto;
+}
+.course-btn a{
+  display: block;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #292929;
+  padding: 20px;
+  background-image: url(images/course-images/course-btn.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* feature.html------------------------------------------------------------------- */
+/* main */
+.feature-img-pc{
+  display: inline-block !important;
+  width: auto;
+  vertical-align: top;
+}
+.feature-img-sp{
+  display: none !important;
+}
+.feature-img{
+  text-align: center;
+}
+.feature-title{
+  font-size: 4rem;
+}
+.feature-main-text{
+  margin-top: 100px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.feature-main-text p{
+  font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', '游明朝体', 'YuMincho','MS P明朝', 'MS PMincho', serif;
+  font-size: 2rem;
+  color: #D1B500;
+  margin: 18px 0 0 30px;
+}
+.feature-subtitle{
+  margin-top: 100px;
+  text-align: center;
+  font-size: 4rem;
+}
+.feature-span{
+  color: #FF8800;
+}
+
+/* お子さまに合う講師によるマンツーマン指導 */
+.feature-contents{
+  margin-top: 100px;
+}
+.h5{
+  text-align: center;
+}
+h5{
+  display: inline-block;
+  font-size: 3rem;
+  padding-left: 100px;
+  position: relative;
+}
+.feature-contents-title1::before{
+  content: url(images/feature-images/point-1.png);
+  position: absolute;
+  top: -13px;
+  left: 0;
+}
+.feature-contents1{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.feature-contents-img{
+  width: 400px;
+  height: 300px;
+}
+.feature-text1{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.feature-text2{
+  font-size: 1.6rem;
+  margin-top: 30px;
+}
+.feature-text3{
+  font-size: 1.6rem;
+  margin-top: 10px;
+}
+.feature-text2,
+.feature-text3{
+  width: 500px;
+}
+
+/* 講師がお子さまと保護者様を徹底サポート */
+.feature-contents-title2::before{
+  content: url(images/feature-images/point-2.png);
+  position: absolute;
+  top: -13px;
+  left: 0;
+}
+.feature-contents2{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+/* 柔軟なスケジュール */
+.feature-contents-title3::before{
+  content: url(images/feature-images/point-3.png);
+  position: absolute;
+  top: -13px;
+  left: 0;
+}
+.feature-contents3{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* コンセプト */
+.feature-concept{
+  margin: 100px 0;
+  background: #63CFFF;
+  width: auto;
+}
+.feature-concept p{
+  font-size: 3rem;
+  font-weight: bold;
+  color: #FFEE00;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* contact.html------------------------------------------------------------------- */
+/* main */
+.contact-title{
+  background: #8DE12E;
+  font-size: 4rem;
+}
+.contact-text{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 50px;
+  text-align: center;
+}
+.contact-br{
+  display: none;
+}
+/* 入力欄 */
+.input-wrapper{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+.form-text{
+  margin-top: 50px;
+  font-size: 1.6rem;
+}
+.form-title{
+  background: #63CFFF;
+  display: flex;
+  padding: 8px;
+}
+.form-title img{
+  margin: 0 20px;
+}
+label{
+  font-weight: bold;
+  color: #fff;
+  display: block;
+}
+input[type='text'],
+select,
+input[type='search'],
+input[type='tel'],
+input[type='email']{
+  display: block;
+  border: 1px solid #5e5e5e;
+  width: 300px;
+  height: 30px;
+  margin: 20px 10px;
+  padding: 3px;
+}
+.input1,
+.input2{
+  display: flex;
+}
+.input-text p{
+  padding: 10px 0 0 10px;
+}
+.input3{
+  display: flex;
+}
+textarea{
+  display: block;
+  border: 1px solid #5e5e5e;
+  width: 917px;
+  height: 100px;
+  margin: 20px auto;
+  padding: 3px;
+}
+input[type='submit']{
+  display: block;
+  margin: 50px auto;
+  width: 250px;
+  height: 80px;
+  background: #FF2020;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 10px;
+}
+input[type='submit']:hover{
+  background: #3cda44;
+  transition: .4s;
+}
+
+/* モバイル版 */
+@media(max-width: 600px){
+  /* header */
+  header{
+    height: 60px;
+  }
+  .header-frame{
+    flex-direction: column;
+  }
+  .header1{
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-li a{
+    color: #fff;
+  }
+  .pc-nav{
+    display: none;
+  }
+  .sp-nav{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    display: block;
+    width: 100%;
+    background: #63CFFF;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all .3s ease-in-out;
+  }
+  #hamburger{
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 25px;
+    margin-top: 12px;
+  }
+  #hamburger span{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #007CE8;
+    transform: translateY(-50%);
+  }
+  #hamburger::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #007CE8;
+  }
+  #hamburger::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #007CE8;
+  }
+  .sp-nav ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .sp-nav li{
+    margin: 10px 0 0;
+    padding: 0;
+  }
+  .sp-nav li span{
+    font-size: 1.6rem;
+    color: #fff;
+  }
+  .sp-nav a .sp-nav li span{
+    display: block;
+    padding: 20px 0;
+  }
+  .sp-nav .close {
+  position: relative;
+  padding-left: 20px;
+  }
+  .sp-nav .close::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 1px;
+    background: #fff;
+    transform: rotate( 45deg );
+  }
+  .sp-nav .close::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 1px;
+    background: #fff;
+    transform: rotate( -45deg );
+  }
+  .toggle{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .header2{
+    display: none;
+  }
+
+  /* main */
+  .main-img-pc{
+    display: none !important;
+  }
+  .main-img-sp{
+    display: inline-block !important;
+    width: auto;
+  }
+  .online-banner {
+    width: auto;
+    padding: 0 5%;
+  }
+  .main-form-list{
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-form-text2{
+    display: none;
+  }
+  .main-form-list li{
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+  }
+  .main-form-list li a{
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+  }
+  .main-form-text1{
+    padding-right: 25px;
+  }
+
+  /* コース案内 */
+  .main-course-contents{
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-course-contents1{
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0;
+  }
+  .main-course-contents3{
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 30px;
+  }
+  .student{
+    padding: 30px;
+    width: auto;
+  }
+
+  /* 塾の特徴 */
+  .main-feature-pc{
+    display: none !important;
+  }
+  .main-feature-sp{
+    display: block !important;
+    width: auto;
+    margin-top: 50px;
+  }
+  .main-feature-contents{
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-feature-contents2{
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #a0a0a0;
+    border-bottom: 1px solid #a0a0a0;
+  }
+  .main-feature-contents1,
+  .main-feature-contents2,
+  .main-feature-contents3{
+    width: auto;
+  }
+
+  /* 合格実績・塾生の体験談 */
+  .main-experience-list{
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-experience-list a{
+    margin: 30px auto 0;
+  }
+
+  /* お知らせ */
+  .main-notice-a{
+    padding: 0 20px 0 10px;
+    line-height: 1.7;
+  }
+  .main-notice-a::before{
+    right: 5px;
+  }
+  .main-notice-a:hover:before{
+    right: 0;
+    transition: .4s;
+  }
+
+  /* footer */
+  .footer-course{
+    width: auto;
+    margin: 0 3%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-course li{
+    padding-bottom: 10px;
+  }
+  .footer-content{
+    width: auto;
+    padding: 30px 2%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-sns li{
+    padding: 0 20px;
+  }
+
+  /* course.html-------------------- */
+  /* main */
+  .course-img-pc{
+    display: none !important;
+  }
+  .course-img-sp{
+    display: inline-block !important;
+    width: auto;
+    vertical-align: top;
+  }
+  .course-main-text{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  /* 学力・個性を見える化 */
+  .test-content{
+    flex-direction: column;
+    align-items: center;
+  }
+  .test-frame1 {
+    width: auto;
+  }
+  .test-frame1{
+    margin-top: 30px;
+  }
+
+  /* お子様一人ひとりに合わせる教材 */
+  .course-frame2 {
+    background: #fff;
+    border-radius: 30px;
+    margin-top: 30px;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .course-text{
+    padding: 0;
+    margin-top: 20px;
+  }
+  .course-br{
+    display: block;
+  }
+
+  /* feature.html------------------------------------------------------------------- */
+  /* main */
+  .feature-img-pc{
+    display: none !important;
+  }
+  .feature-img-sp{
+    display: inline-block !important;
+    width: auto;
+    vertical-align: top;
+  }
+  .feature-main-text{
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature-main-text p{
+    text-align: center;
+    margin: 18px auto 0;
+  }
+  .feature-subtitle{
+    font-size: 3rem;
+  }
+
+  /* お子さまに合う講師によるマンツーマン指導 */
+  h5{
+    text-align: left;
+    font-size: 2.5rem;
+  }
+  .feature-contents-title1::before{
+    top: 3px;
+  }
+  .feature-contents1{
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature-contents-img{
+    width: auto;
+    height: auto;
+  }
+  .feature-text1{
+    margin-top: 30px;
+  }
+  .feature-text2,
+  .feature-text3{
+    width: auto;
+  }
+
+  /* 講師がお子さまと保護者様を徹底サポート */
+  .feature-contents-title2::before{
+    top: 3px;
+  }
+  .feature-contents2{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* 柔軟なスケジュール */
+  .feature-contents-title3::before{
+    top: -14px;
+  }
+  .feature-contents3{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* コンセプト */
+  .feature-concept p{
+    font-size: 2.5rem;
+  }
+
+  /* contact.html------------------------------------------------------------------- */
+  /* main */
+  .contact-text{
+    font-size: 2.5rem;
+  }
+  .contact-br{
+    display: block;
+  }
+  .input{
+    width: 300px;
+    margin: 0 auto;
+  }
+  .input1,
+  .input2{
+    flex-direction: column;
+  }
+  .input3{
+    flex-direction: column;
+  }
+  input[type='text'],
+  select,
+  input[type='search'],
+  input[type='tel'],
+  input[type='email']{
+    margin: 20px auto;
+  }
+  textarea{
+    width: 300px;
+    margin: 20px auto;
+  }
+}

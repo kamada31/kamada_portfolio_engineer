@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="一人ひとりの性格・学力・目標に対応した個別指導システムがここにあります。">
+  <title>知学塾 資料請求のお問い合わせ</title>
+  <link rel="icon" type="image/png" href="images/top-images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- 資料請求ページ トップ -->
+  <header>
+    <div class="header-frame wrapper">
+      <div class="header1">
+        <h1><a href="index.html"><img src="images/top-images/logo.png" alt="知学塾"></a></h1>
+        <!-- PC メニュー -->
+        <nav class="pc-nav">
+          <ul class="header-ul">
+            <li class="header-li"><a class="header-a1" href="#">小学生</a></li>
+            <li class="header-li"><a class="header-a2" href="course.html">中学生</a></li>
+            <li class="header-li"><a class="header-a3" href="#">高校生</a></li>
+            <li class="header-li"><a class="header-a4" href="feature.html">知学塾の特徴</a></li>
+          </ul>
+        </nav>
+        <!-- SP メニュー -->
+        <nav class="sp-nav">
+          <ul class="header-ul">
+            <li class="header-li"><a class="header-a1" href="#">小学生コース</a></li>
+            <li class="header-li"><a class="header-a2" href="course.html">中学生コース</a></li>
+            <li class="header-li"><a class="header-a3" href="#">高校生コース</a></li>
+            <li class="header-li"><a class="header-a4" href="feature.html">知学塾の特徴</a></li>
+            <li class="close"><span>閉じる</span></li>
+          </ul>
+        </nav>
+        <div id="hamburger">
+          <span></span>
+        </div>
+      </div>
+      <div class="header2">
+        <p class="header2-text1">お問い合わせはこちら<span>TEL.01-2345-6789</span></p>
+        <p class="header2-text2">［受付時間］ 平日 10:00～21:00 / 土日 10:00～19:00</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- main -->
+  <main>
+    <h2 class="contact-title">資料請求の<br class="contact-br">お問い合わせ</h2>
+    <p class="contact-text">学習相談もお気軽にご質問・ご要望欄へご入力ください。</p>
+  </main>
+
+  <!-- 入力欄 -->
+  <form class="input-wrapper" action="#">
+    <!-- お子様のお名前 -->
+    <div class="form-text">
+      <div class="form-title">
+        <img src="images/contact-images/indispensable.png" alt="必須">
+        <label for="familyname">お子様のお名前</label>
+      </div>
+      <div class="input">
+        <div class="input1">
+          <input type="text" id="familyname" name="familyname" placeholder="姓" required>
+          <input type="text" id="name" name="name" placeholder="名" required>
+        </div>
+        <div class="input2">
+          <input type="text" id="familyname-furigana" name="familyname-furigana" placeholder="せい" required>
+          <input type="text" id="name-furigana" name="name-furigana" placeholder="めい" required>
+        </div>
+      </div>
+    </div>
+    <!-- 性別 -->
+    <div class="form-text">
+      <div class="form-title">
+        <img src="images/contact-images/any.png" alt="任意">
+        <label for="gender">性別</label>
+      </div>
+      <div class="input">
+        <select name="gender" id="gender">
+          <option value="選択してください" selected>選択してください</option>
+          <option value="男">男</option>
+          <option value="女">女</option>
+          <option value="その他">その他</option>
+        </select>
+      </div>
+    </div>
+    <!-- 学年 -->
+    <div class="form-text">
+      <div class="form-title">
+        <img src="images/contact-images/indispensable.png" alt="必須">
+        <label for="number">学年</label>
+      </div>
+      <div class="input">
+        <select name="number" id="number">
+          <option value="選択してください" selected>選択してください</option>
+          <option value="小学1年生">小学1年生</option>
+          <option value="小学2年生">小学2年生</option>
+          <option value="小学3年生">小学3年生</option>
+          <option value="小学4年生">小学4年生</option>
+          <option value="小学5年生">小学5年生</option>
+          <option value="小学6年生">小学6年生</option>
+          <option value="中学1年生">中学1年生</option>
+          <option value="中学2年生">中学2年生</option>
+          <option value="中学3年生">中学3年生</option>
+          <option value="高校1年生">高校1年生</option>
+          <option value="高校2年生">高校2年生</option>
+          <option value="高校3年生">高校3年生</option>
+        </select>
+      </div>
+    </div>
+    <!-- 学校名 -->
+    <div class="form-text">
+      <div class="form-title">
+        <img src="images/contact-images/any.png" alt="任意">
+        <label for="schoolname">学校名</label>
+      </div>
+      <div class="input">
+          <input type="text" id="schoolname" name="schoolname" placeholder="学校名">
+      </div>
+    </div>
+    <!-- 住所 -->
+    <div class="form-text">
+      <div class="form-title">
+        <img src="images/contact-images/indispensable.png" alt="必須">
+        <label for="address">住所</label>
+      </div>
+      <div class="input">
+        <div class="input-text">
+          <p>郵便番号</p>
+          <input type="text" id="address" name="address" required>
+        </div>
+        <div class="input-text">
+          <p>都道府県</p>
+          <input type="text" id="prefecture" name="prefecture" required>
+        </div>
+        <div class="input3">
+          <div class="input-text">
+            <p>市区町村</p>
+            <input type="text" id="municipality" name="municipality" required>
+          </div>
+          <div class="input-text">
+            <p>番地</p>
+            <input type="text" id="housenumber" name="housenumber" required>
+          </div>
+        </div>
+          <div class="input-text">
+            <p>アパート・マンション名</p>
+            <input type="text" id="lease" name="lease" required>
+          </div>
+      </div>
+    </div>
+    <!-- 教室検索 -->
+    <div class="form-text">
+      <div class="form-title">
+        <img src="images/contact-images/indispensable.png" alt="必須">
+        <label for="schoolsearch">教室検索</label>
+      </div>
+      <div class="input input-text">
+        <p>入力した住所の近くで探す</p>
+        <input type="search" id="schoolsearch" name="schoolsearch" placeholder="住所検索" required>
+      </div>
+    </div>
+    <!-- 電話番号 -->
+    <div class="form-text">
+      <div class="form-title">
+        <img src="images/contact-images/indispensable.png" alt="必須">
+        <label for="tel">電話番号</label>
+      </div>
+      <div class="input">
+        <input type="tel" id="tel" name="tel" placeholder="000-0000-0000" required>
+      </div>
+    </div>
+    <!-- メールアドレス -->
+    <div class="form-text">
+      <div class="form-title">
+        <img src="images/contact-images/indispensable.png" alt="必須">
+        <label for="email">メールアドレス</label>
+      </div>
+      <div class="input input-text">
+        <p>※お問い合わせ完了メールが届きます。</p>
+        <input type="email" id="email" name="email" placeholder="E-メール" required>
+      </div>
+    </div>
+    <!-- ご質問・ご要望 -->
+    <div class="form-text">
+      <div class="form-title">
+        <img src="images/contact-images/any.png" alt="任意">
+        <label for="message">ご要望・ご意見</label>
+      </div>
+      <textarea id="message" name="message" placeholder="学習相談、料金について等お気軽にご入力ください。"></textarea>
+    </div>
+    <!-- 送信 -->
+    <input type="submit" class="button" value="送信する">
+  </form>
+
+  <!-- 各種コンタクト ボタン -->
+  <div class="main-form">
+    <p>ご相談やご質問もお気軽に！</p>
+    <ul class="main-form-list wrapper">
+      <li class="main-form-btn1">
+        <a href="#">
+          <span class="main-form-text1">無料体験</span><br>
+          <span class="main-form-text2">学習プランや授業料もご案内します</span>
+        </a>
+      </li>
+      <li class="main-form-btn2">
+        <a href="contact.html">
+          <span class="main-form-text1">資料請求</span><br>
+          <span class="main-form-text2">指導方法などの資料をお届け</span>
+        </a>
+      </li>
+      <li class="main-form-btn3">
+        <a href="#">
+          <span class="main-form-text1">教室検索</span><br>
+          <span class="main-form-text2">郵便番号・フリーワード・エリアから</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <ul class="footer-course">
+      <li><a href="#">小学生コース</a></li>
+      <li><a href="course.html">中学生コース</a></li>
+      <li><a href="#">高校生コース</a></li>
+      <li><a href="feature.html">知学塾の特徴</a></li>
+    </ul>
+    <div class="footer-content">
+      <div class="footer-list">
+        <ul class="footer-list1">
+          <li><a href="#">塾生の声</a></li>
+          <li><a href="#">お知らせ</a></li>
+          <li><a href="#">受験対策</a></li>
+          <li><a href="#">期別講習</a></li>
+        </ul>
+        <ul class="footer-list2">
+          <li><a href="#">保護者の声</a></li>
+          <li><a href="#">受験料について</a></li>
+          <li><a href="#">よくあるご質問</a></li>
+          <li><a href="#">TEL.01-2345-6789</a></li>
+        </ul>
+      </div>
+      <ul class="footer-sns">
+        <li><a href="#"><img src="images/top-images/X.png" alt="#"></a></li>
+        <li><a href="#"><img src="images/top-images/Facebook.png" alt="#"></a></li>
+        <li><a href="#"><img src="images/top-images/Instagram.png" alt="#"></a></li>
+      </ul>
+    </div>
+    <h1 class="footer-h1"><a href="index.html"><img src="images/top-images/logo.png" alt="知学塾"></a></h1>
+    <p><small>&copy;2024 KAMADA</small></p>
+  </footer>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+  <!-- JavaScript -->
+  <script src="tutoring-school.js"></script>
+</body>
+
+</html>
