@@ -1,0 +1,920 @@
+@charset "UTF-8";
+
+/* 共有部分 */
+html{
+  font-size: 10px;
+}
+body{
+  font-family: "Noto Serif JP", serif;
+  line-height: 1.7;
+  color: #292929;
+}
+a{
+  text-decoration: none;
+  color: #292929;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+li{
+  list-style: none;
+}
+.wrapper{
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 12%;
+}
+
+/* header */
+header{
+  width: auto;
+  height: 100px;
+}
+.page-frame{
+  display: flex;
+  justify-content: space-between;
+}
+h1{
+  font-family: 'Shippori Mincho', serif;
+  font-size: 3rem;
+  line-height: 100px;
+  padding: 0 40px;
+  position: relative;
+}
+h1::before{
+  content: url(images/top/name-left.png);
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+h1::after{
+  content: url(images/top/name-right.png);
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+.nav-menu-ul{
+  display: flex;
+  justify-content: space-between;
+  line-height: 100px;
+}
+.nav-menu-ul li{
+  position: relative;
+}
+.nav-menu-ul li a{
+  font-size: 1.6rem;
+  padding-left: 100px;
+}
+.nav-menu-ul li a:hover{
+  color: #a3a3a3;
+  transition: .5s;
+}
+.nav-works::before{
+  content: url(images/top/nav-1.png);
+  position: absolute;
+  top: 5px;
+  left: 65px;
+}
+.nav-about::before{
+  content: url(images/top/nav-2.png);
+  position: absolute;
+  top: 5px;
+  left: 80px;
+}
+.nav-contact::before{
+  content: url(images/top/nav-3.png);
+  position: absolute;
+  top: 5px;
+  left: 70px;
+}
+.sp-nav{
+  display: none;
+}
+h2{
+  text-align: center;
+  margin-top: 13%;
+  font-family: 'Shippori Mincho', serif;
+  line-height: 1.3;
+  background-image: url(images/top/top-1.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding: 50px 0;
+}
+.h2-name{
+  font-size: 8rem;
+}
+.h2-portfolio{
+  font-size: 4rem;
+}
+/* scroll */
+.scrolldown1{
+  position:absolute;
+  left:50%;
+  bottom:10px;
+  height:50px;
+}
+.scrolldown1 span{
+  position: absolute;
+  left:-21px;
+  top: -25px;
+  color: #C30E23;
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+}
+.scrolldown1::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 30px;
+  background: #C30E23;
+  animation: pathmove 1.4s ease-in-out infinite;
+  opacity:0;
+}
+@keyframes pathmove{
+  0%{
+    height:0;
+    top:0;
+    opacity: 0;
+  }
+  30%{
+    height:30px;
+    opacity: 1;
+  }
+  100%{
+    height:0;
+    top:50px;
+    opacity: 0;
+  }
+}
+/* メインの背景画像 */
+.big-bg{
+  background-image: url(images/top/top-bg.png);
+  background-size: cover;
+  background-position: center top;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* 作品紹介 */
+.works-page{
+  margin-top: 150px;
+}
+h3{
+  text-align: center;
+  font-family: 'Shippori Mincho', serif;
+}
+.h3-main{
+  font-size: 6rem;
+}
+.h3-sub{
+  font-size: 2rem;
+  padding: 0 150px;
+  position: relative;
+}
+.h3-sub::before{
+  content: "";
+  position: absolute;
+  border-top: 1px solid #292929;
+  width: 120px;
+  top: 50%;
+  left: 0;
+}
+.h3-sub::after{
+  content: "";
+  position: absolute;
+  border-top: 1px solid #292929;
+  width: 120px;
+  top: 50%;
+  right: 0;
+}
+/* WEBSITE */
+h4{
+  margin: 50px 0;
+  font-family: 'Shippori Mincho', serif;
+  font-size: 6rem;
+  padding: 50px 100px;
+  position: relative;
+}
+.website-title::before{
+  content: url(images/ornament/subtitle.png);
+  position: absolute;
+  left: 0;
+  top: 8px;
+  z-index: -1;
+}
+
+/* RESTAURANT RESTAURANT */
+.restaurant{
+  display: flex;
+  justify-content: space-between;
+}
+.mounting-page{
+  margin: 100px 50px 125px 0;
+  padding: 30px 0;
+  position: relative;
+}
+.mounting-page:hover{
+  opacity: 0.8;
+  transition: 0.4s;
+}
+.mounting-title{
+  text-align: center
+}
+.mounting-title1{
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.mounting-title2,
+.mounting-title3{
+  font-size: 1.6rem;
+}
+.mounting-tool{
+  margin-top: 50px;
+  padding-left: 50px;
+  position: relative;
+}
+.mounting-tool::before{
+  content: url(images/ornament/icon.png);
+  position: absolute;
+  left: 0;
+  top: 13px;
+}
+.mounting-tool1{
+  font-size: 3rem;
+  font-weight: bold;
+}
+.mounting-tool2{
+  font-size: 2rem;
+  margin-top: 20px;
+}
+.mounting-period{
+  margin-top: 50px;
+  padding-left: 50px;
+  position: relative;
+}
+.mounting-period::before{
+  content: url(images/ornament/icon.png);
+  position: absolute;
+  left: 0;
+  top: 13px;
+}
+.mounting-period1{
+  font-size: 3rem;
+  font-weight: bold;
+}
+.mounting-period2{
+  font-size: 2rem;
+  margin-top: 20px;
+}
+.mounting-btn{
+  display: block;
+  width: 250px;
+  height: 80px;
+  text-align: center;
+  margin: 50px auto 0;
+  padding: 25px;
+  color: #fff;
+  font-size: 2rem;
+  background: linear-gradient(to right,#FF1934, #FFBFBF);
+  box-shadow: 2px 2px 4px #6e6e6e;
+}
+.mounting-btn:hover{
+  opacity: 0.7;
+  transition: 0.5s;
+}
+/* 知学塾 */
+.school{
+  margin-top: 150px;
+}
+.school{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+/* BANNER */
+.banner{
+  margin-top: 200px;
+  background-image: url(images/ornament/banner.png);
+  background-position: left bottom;
+}
+.banner-title{
+  text-align: right;
+}
+.banner-title::before{
+  content: url(images/ornament/subtitle.png);
+  position: absolute;
+  right: 0;
+  top: 8px;
+  z-index: -1;
+}
+.banner-list{
+  margin-top: 100px;
+  padding-bottom: 60px;
+  position: relative;
+}
+.banner-ul{
+  display: flex;
+  justify-content: space-between;
+}
+.banner-li{
+  padding-left: 5px;
+}
+.banner-li:hover{
+  opacity: 0.6;
+  transition: 0.5s;
+}
+.banner img{
+  height: 190px;
+  box-shadow: 4px 4px 4px #6e6e6e;
+}
+
+/* ご挨拶 */
+.about-page{
+  margin-top: 200px;
+}
+
+/* PLOFILE */
+.plofile-title{
+  margin-bottom: 0;
+}
+.plofile-frame{
+  padding: 50px 16% 160px;
+  background-image: url(images/ornament/banner-top.png), url(images/ornament/banner-bottom.png);
+  background-repeat: no-repeat;
+  background-position: right top, left bottom;
+}
+.plofile-title::before{
+  content: url(images/ornament/subtitle.png);
+  position: absolute;
+  left: 0;
+  top: 8px;
+  z-index: -1;
+}
+.plofile-name{
+  margin-top: 50px;
+}
+.plofile-name1{
+  font-size: 6rem;
+  margin-left: 50px;
+}
+.plofile-name2{
+  font-size: 3rem;
+  color: #C30E23;
+  margin-left: 50px;
+}
+.plofile-contents{
+  margin: 50px 0 0 50px;
+  padding-left: 50px;
+  position: relative;
+}
+.plofile-contents::before{
+  content: url(images/ornament/icon.png);
+  position: absolute;
+  left: 0;
+  top: 13px;
+}
+.plofile-contents-title{
+  font-size: 3rem;
+  font-weight: bold;
+}
+.plofile-contents-li{
+  font-size: 2rem;
+  padding-left: 10px;
+  position: relative;
+}
+.plofile-contents-li::before{
+  content: url(images/ornament/icon2.png);
+  position: absolute;
+  left: 0;
+  top: -5px;
+}
+
+/* SKILLS */
+.skills{
+  margin-top: 200px;
+}
+.skills-title{
+  text-align: right;
+}
+.skills-title::before{
+  content: url(images/ornament/subtitle.png);
+  position: absolute;
+  right: 0;
+  top: 8px;
+  z-index: -1;
+}
+.skills-contens{
+  width: 957px;
+  margin: 50px auto 0;
+  padding-left: 200px;
+  position: relative;
+}
+.skills-name{
+  font-size: 3rem;
+  font-weight: bold;
+}
+.skills-text{
+  font-size: 2rem;
+}
+#html-css::before{
+  content: '';
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-image: url(images/ornament/html-css-logo.png);
+  background-size: contain;
+  vertical-align: middle;
+  position: absolute;
+  top: 15px;
+  left: 60px;
+}
+#photoshop::before{
+  content: '';
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-image: url(images/ornament/photoshop-logo.png);
+  background-size: contain;
+  vertical-align: middle;
+  position: absolute;
+  top: 15px;
+  left: 60px;
+}
+#illustrator::before{
+  content: '';
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-image: url(images/ornament/Illustrator-logo.png);
+  background-size: contain;
+  vertical-align: middle;
+  position: absolute;
+  top: 15px;
+  left: 60px;
+}
+#adobexd::before{
+  content: '';
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-image: url(images/ornament/AdobeXd-logo.png);
+  background-size: contain;
+  vertical-align: middle;
+  position: absolute;
+  top: 15px;
+  left: 60px;
+}
+
+/* お問い合わせ */
+.contact-page{
+  margin-top: 200px;
+}
+.contact-contens{
+  margin-top: 100px;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.contact-btn{
+  display: block;
+  width: 400px;
+  height: 100px;
+  text-align: center;
+  margin: 100px auto 0;
+  padding: 28px;
+  color: #fff;
+  background: linear-gradient(to right,#FF1934, #FFBFBF);
+  box-shadow: 4px 4px 4px #6e6e6e;
+}
+.contact-btn:hover{
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+/* footer */
+footer{
+  margin-top: 150px;
+  width: auto;
+  height: 100px;
+  background: #DCDDDD;
+}
+footer p{
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 100px;
+}
+
+/* WEBサイト詳細ページ */
+.introduction{
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 11%;
+}
+.introduction-img{
+  margin: 100px auto;
+  text-align: center;
+}
+.introduction-img a:hover{
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.introduction-title{
+  font-size: 4rem;
+  font-family: 'Shippori Mincho', serif;
+}
+.introduction-text{
+  font-size: 2rem;
+  margin: 50px auto 0;
+  padding-left: 50px;
+  position: relative;
+}
+.introduction-text::before{
+  content: url(images/ornament/icon.png);
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+.introduction-btn{
+  display: block;
+  width: 250px;
+  height: 80px;
+  text-align: center;
+  margin: 100px auto 0;
+  padding: 25px;
+  color: #fff;
+  font-size: 2rem;
+  background: linear-gradient(to right,#FF1934, #FFBFBF);
+  box-shadow: 2px 2px 4px #6e6e6e;
+}
+.introduction-btn:hover{
+  opacity: 0.8;
+  transition: 0.4s;
+}
+
+/* バナー詳細ページ */
+.banner-text{
+  width: 800px;
+}
+
+/* モバイル版 */
+@media(max-width: 600px){
+  /* 共有部分 */
+  .wrapper{
+    padding: 0 5%;
+  }
+
+  /* header */
+  .pc-nav{
+    display: none;
+  }
+  header{
+    height: 70px;
+  }
+  h1{
+    line-height: 70px;
+  }
+  .nav-menu-ul{
+    margin-top: 0;
+  }
+  .nav-menu-ul li a{
+    font-size: 2rem;
+    padding-left: 30px;
+    color: #fff;
+  }
+  .nav-works::before{
+    left: 0;
+  }
+  .nav-about::before{
+    left: 10px;
+  }
+  .nav-contact::before{
+    left: 0;
+  }
+  .sp-nav{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    width: 100%;
+    background: #3d3d3de7;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all .3s ease-in-out;
+  }
+  #hamburger{
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 25px;
+    margin-top: 23px;
+  }
+  #hamburger span{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #C30E23;
+    transform: translateY(-50%);
+  }
+  #hamburger::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #C30E23;
+  }
+  #hamburger::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #C30E23;
+  }
+  /* モバイル版 メニュー */
+  .sp-nav ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .sp-nav li{
+    margin: 20px 0 0;
+    padding: 0;
+  }
+  .sp-nav li span{
+    font-size: 1rem;
+    color: #fff;
+  }
+  .sp-nav a .sp-nav li span{
+    display: block;
+    padding: 20px 0;
+  }
+  .sp-nav .close {
+    position: relative;
+    padding-left: 30px;
+  }
+  .sp-nav .close::before {
+    content: '';
+    position: absolute;
+    top: 49%;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 1px;
+    background: #fff;
+    transform: rotate( 45deg );
+  }
+  .sp-nav .close::after {
+    content: '';
+    position: absolute;
+    top: 49%;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 1px;
+    background: #fff;
+    transform: rotate( -45deg );
+  }
+  .sp-nav .close span{
+    font-size: 2rem;
+  }
+  .toggle{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  h2{
+    margin-top: 30%;
+    background-size: 100% auto;
+    background-position: center 76%;
+  }
+  .h2-name{
+    font-size: 6rem;
+  }
+  .h2-portfolio{
+    font-size: 3.5rem;
+    line-height: 2;
+  }
+
+  /* 作品紹介 */
+  .h3-sub{
+    padding: 0 70px;
+  }
+  .h3-sub::before{
+    width: 60px;
+  }
+  .h3-sub::after{
+    width: 60px;
+  }
+  /* WEBSITE */
+  h4{
+    text-align: center;
+    font-size: 5rem;
+    margin: 100px 0 50px;
+    padding: 50px 0;
+  }
+  .website-title::before{
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  /* RESTAURANT PREZIOSA */
+  .restaurant{
+    flex-direction: column;
+    align-items: center;
+  }
+  .mounting-page{
+    margin: 0;
+  }
+  .mounting-title2,
+  .mounting-title3{
+    margin-top: 10px;
+  }
+  .mounting-tool{
+    padding-left: 36px;
+  }
+  .mounting-tool1{
+    font-size: 2.5rem;
+  }
+  .mounting-tool::before{
+    top: 8px;
+  }
+  .mounting-period{
+    padding-left: 36px;
+  }
+  .mounting-period1{
+    font-size: 2.5rem;
+  }
+  .mounting-period::before{
+    top: 8px;
+  }
+  /* 知学塾 */
+  .school{
+    flex-direction: column;
+    align-items: center;
+  }
+  /* BANNER */
+  .banner{
+    background-size: 100% auto;
+  }
+  .banner-title{
+    text-align: center;
+  }
+  .banner-title::before{
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .banner-list{
+    margin-top: 50px;
+  }
+  .banner-ul{
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner-li{
+    padding: 20px 0;
+  }
+
+  /* ご挨拶 */
+  /* PROFILE */
+  .plofile-title::before{
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .plofile-frame{
+    padding: 80px 0 140px;
+    background-size: 50%;
+  }
+  .plofile-name{
+    text-align: center;
+  }
+  .plofile-name1{
+    font-size: 4rem;
+    margin: 0;
+  }
+  .plofile-name2{
+    font-size: 2rem;
+    margin: 0;
+  }
+  .plofile-contents{
+    margin: 50px 0 0;
+    padding-left: 36px;
+  }
+  .plofile-contents::before{
+    top: 2px;
+  }
+  .plofile-contents-title{
+    line-height: 1.2;
+    font-size: 2.5rem;
+  }
+  .plofile-contents-text{
+    margin-top: 20px;
+  }
+  .vision-text{
+    margin-top: 20px;
+  }
+  /* SKILLS */
+  .skills{
+    margin-top: 100px;
+  }
+  .skills-title{
+    text-align: center;
+  }
+  .skills-title::before{
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .skills-contens{
+    width: auto;
+    padding-left: 100px;
+  }
+  #html-css::before{
+    width: 80px;
+    height: 80px;
+    left: 0;
+  }
+  #photoshop::before{
+    width: 80px;
+    height: 80px;
+    left: 0;
+  }
+  #illustrator::before{
+    width: 80px;
+    height: 80px;
+    left: 0;
+  }
+  #adobexd::before{
+    width: 80px;
+    height: 80px;
+    left: 0;
+  }
+  .skills-br{
+    display: none;
+  }
+
+  /* お問い合わせ */
+  .h3-contact{
+    font-size: 5rem;
+  }
+  .contact-contens{
+    margin-top: 50px;
+  }
+  .contact-text{
+    font-size: 2rem;
+  }
+  .contact-btn{
+    width: 300px;
+    height: 80px;
+    padding: 14px;
+    margin: 50px auto 0;
+  }
+
+  /* WEBサイト詳細ページ */
+  .introduction-img{
+    margin: 70px auto;
+  }
+  .introduction-title{
+    line-height: 1.2;
+    font-size: 2.5rem;
+  }
+  .introduction-title2,
+  .introduction-title3{
+    margin-top: 10px;
+  }
+  .introduction-text{
+    padding-left: 36px;
+    font-size: 1.6rem;
+  }
+  .introduction-text::before{
+    top: 0;
+  }
+
+  /* バナー詳細ページ */
+  .introduction-banner{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 11%;
+  }
+  .banner-text{
+    width: auto;
+  }
+}
